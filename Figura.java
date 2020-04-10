@@ -28,6 +28,17 @@ public abstract class Figura {
 		setColoreada(coloreada);
 	}
 	
+	//devuelve un String con los datos de Figura
+	@Override
+	public String toString() {
+		String figura;
+		if(coloreada)
+			figura = "Color: "+color+"\nColoreada: La figura esta coloreada\n";
+		else
+			figura = "Color: "+color+"\nColoreada: La figura no esta coloreada aun\n";
+		return figura;
+	}
+
 	//calcula y devuelve el perimetro (abs)
 	public abstract double getPerimetro();
 	
