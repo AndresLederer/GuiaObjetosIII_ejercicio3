@@ -33,4 +33,10 @@ public abstract class Cuadrilatero extends Figura {
 		setLargo(lado);
 		setAltura(lado);
 	}
+	
+	@Override
+	public String toString() {
+		String Cuadrilatero = super.toString()+String.format("Largo: %.2f\nAltura: %.2f\n",largo,altura);
+		return Cuadrilatero;
+	}
 }
